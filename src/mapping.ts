@@ -3,7 +3,8 @@
  * manually test your functions
  */
 const numbers = [10, 13, 20, 25, 38, 35, 40];
-
+console.log(squaredNumbers(numbers));
+console.log(doubledNumbers(numbers));
 // `squaredNumbers` function that:
 // - Accepts "numbers" parameter of type "number[]".
 // - Return a new array that contains each number squared.
@@ -12,7 +13,7 @@ const numbers = [10, 13, 20, 25, 38, 35, 40];
 function squaredNumbers(numbers: number[]): number[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return numbers.map((num) => num * num); // replace empty array with what you see is fit
 }
 
 // `doubledNumbers` function that:
@@ -23,7 +24,7 @@ function squaredNumbers(numbers: number[]): number[] {
 function doubledNumbers(numbers: number[]): number[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return numbers.map((num) => num * 2); // replace empty array with what you see is fit
 }
 
 export { squaredNumbers, doubledNumbers };

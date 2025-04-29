@@ -3,8 +3,9 @@
  * manually test your functions
  */
 const numbers = [10, 13, 20, 25, 38, 35, 40];
-
-// `filteredAndSquared` function that:
+console.log(filteredAndSquared(numbers));
+console.log(filteredAndTripled(numbers));
+// `filteredAndSquared` function that:w
 // - Accepts "numbers" parameter of type "number[]".
 // - Return an array containing the squares of all numbers that are 20 or greater.
 // example:
@@ -12,7 +13,7 @@ const numbers = [10, 13, 20, 25, 38, 35, 40];
 function filteredAndSquared(numbers: number[]): number[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return numbers.filter((num) => num >= 20).map((num) => num * num); // replace empty array with what you see is fit
 }
 
 // `filteredAndTripled` function that:
@@ -23,7 +24,7 @@ function filteredAndSquared(numbers: number[]): number[] {
 function filteredAndTripled(numbers: number[]): number[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return numbers.filter((num) => num % 5 === 0).map((num) => num * 3); // replace empty array with what you see is fit
 }
 
 export { filteredAndSquared, filteredAndTripled };
